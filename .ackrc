@@ -1,0 +1,17 @@
+--ignore-directory=.gem
+--ignore-directory=.tmp
+--ignore-directory=.sass-cache
+--ignore-directory=_site
+--ignore-directory=bower_components
+--ignore-directory=build
+--ignore-directory=coverage
+--ignore-directory=deps
+--ignore-directory=dist
+--ignore-directory=fonts
+--ignore-directory=log
+--ignore-directory=node_modules
+--ignore-directory=node_packages
+--ignore-directory=Pods
+--ignore-directory=tmp
+--ignore-directory=vendor
+--ignore-file=is:.tags

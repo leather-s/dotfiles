@@ -1,0 +1,354 @@
+snippet css
+
+/* setup */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, segoe ui, sans-serif;
+	line-height: 1.6;
+	color: #111;
+}
+
+*:focus {
+	outline: 0;
+}
+
+/* helpers */
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* elements */
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* buttons */
+
+/* forms */
+
+/* tables */
+
+/* layout */
+
+.wrapper {
+	$0
+}
+
+/* header */
+
+/* content */
+
+/* footer */
+endsnippet
+
+# layout
+
+snippet db
+display: block;
+endsnippet
+
+snippet dib
+display: inline-block;
+endsnippet
+
+snippet di
+display: inline;
+endsnippet
+
+snippet pa
+position: absolute;
+endsnippet
+
+snippet prel
+position: relative;
+endsnippet
+
+snippet pf
+position: fixed;
+endsnippet
+
+snippet dn
+display: none;
+endsnippet
+
+snippet fll
+float: left;
+endsnippet
+
+snippet flr
+float: right;
+endsnippet
+
+snippet fln
+float: none;
+endsnippet
+
+snippet cl
+clear: left;
+endsnippet
+
+snippet cr
+clear: right;
+endsnippet
+
+snippet cb
+clear: both;
+endsnippet
+
+snippet w
+width: $1;
+endsnippet
+
+snippet h
+height: $1;
+endsnippet
+
+snippet cd
+cursor: default;
+endsnippet
+
+snippet cp
+cursor: pointer;
+endsnippet
+
+snippet lstn
+list-style-type: none;
+endsnippet
+
+snippet bcc
+border-collapse: collapse;
+endsnippet
+
+snippet z
+z-index: $0;
+endsnippet
+
+snippet !
+!important;
+endsnippet
+
+# margin
+
+snippet m
+margin: $1;
+endsnippet
+
+snippet mm
+margin: 0;
+endsnippet
+
+snippet mt
+margin-top: $1;$0
+endsnippet
+
+snippet mr
+margin-right: $1;$0
+endsnippet
+
+snippet mb
+margin-bottom: $1;$0
+endsnippet
+
+snippet ml
+margin-left: $1;$0
+endsnippet
+
+snippet mtt
+margin-top: 0;
+endsnippet
+
+snippet mrr
+margin-right: 0;
+endsnippet
+
+snippet mbb
+margin-bottom: 0;
+endsnippet
+
+snippet mll
+margin-left: 0;
+endsnippet
+
+snippet mma
+margin: 0 auto;
+endsnippet
+
+# padding
+
+snippet p
+padding: $1;
+endsnippet
+
+snippet pp
+padding: 0;
+endsnippet
+
+snippet pt
+padding-top: $1${2:px};
+endsnippet
+
+snippet pr
+padding-right: $1${2:px};
+endsnippet
+
+snippet pb
+padding-bottom: $1${2:px};
+endsnippet
+
+snippet pl
+padding-left: $1${2:px};
+endsnippet
+
+snippet ptt
+padding-top: 0;
+endsnippet
+
+snippet prr
+padding-right: 0;
+endsnippet
+
+snippet pbb
+padding-bottom: 0;
+endsnippet
+
+snippet pll
+padding-left: 0;
+endsnippet
+
+# borders
+
+snippet b
+border: $1;
+endsnippet
+
+snippet bn
+border: none;
+endsnippet
+
+snippet bt
+border-top: $1;
+endsnippet
+
+snippet br
+border-right: $1;
+endsnippet
+
+snippet bb
+border-bottom: $1;
+endsnippet
+
+snippet bl
+border-left: $1;
+endsnippet
+
+snippet btt
+border-top: 0;
+endsnippet
+
+snippet brr
+border-right: 0;
+endsnippet
+
+snippet bbb
+border-bottom: 0;
+endsnippet
+
+snippet bll
+border-left: 0;
+endsnippet
+
+snippet brad
+border-radius: $1${2:px};
+endsnippet
+
+# fonts & text
+
+snippet fs
+font-size: $1${2:px};
+endsnippet
+
+snippet tal
+text-align: left;
+endsnippet
+
+snippet tac
+text-align: center;
+endsnippet
+
+snippet tar
+text-align: right;
+endsnippet
+
+snippet ttu
+text-transform: uppercase;
+endsnippet
+
+snippet ttn
+text-transform: none;
+endsnippet
+
+snippet fsi
+font-style: italic;
+endsnippet
+
+snippet fsn
+font-style: normal;
+endsnippet
+
+snippet tdu
+text-decoration: underline;
+endsnippet
+
+snippet tdn
+text-decoration: none;
+endsnippet
+
+snippet fw
+font-weight: $1;
+endsnippet
+
+snippet fwn
+font-weight: normal;
+endsnippet
+
+snippet fwb
+font-weight: bold;
+endsnippet
+
+snippet lh
+line-height: $1;
+endsnippet
+
+snippet vat
+vertical-align: top;
+endsnippet
+
+snippet vam
+vertical-align: middle;
+endsnippet
+
+snippet vab
+vertical-align: bottom;
+endsnippet
+
+# background
+
+snippet bg
+background: $1;
+endsnippet
