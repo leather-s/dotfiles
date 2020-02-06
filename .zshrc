@@ -66,13 +66,27 @@ function echo_color() {
   local color="$1"
   printf "${color}$2\033[0m\n"
 }
-# echo_color "\033[0;90m" "c-f  Move forward"
-# echo_color "\033[0;90m" "c-b  Move backward"
-# echo_color "\033[0;90m" "c-p  Move up"
-# echo_color "\033[0;90m" "c-n  Move down"
-# echo_color "\033[0;90m" "c-a  Jump to beginning of line"
-# echo_color "\033[0;90m" "c-e  Jump to end of line"
-# echo_color "\033[0;90m" "c-d  Delete forward"
-# echo_color "\033[0;90m" "c-h  Delete backward"
-# echo_color "\033[0;90m" "c-k  Delete forward to end of line"
-# echo_color "\033[0;90m" "c-u  Delete entire line"
+echo_color "\033[0;90m" "c-f  Move forward"
+echo_color "\033[0;90m" "c-b  Move backward"
+echo_color "\033[0;90m" "c-p  Move up"
+echo_color "\033[0;90m" "c-n  Move down"
+echo_color "\033[0;90m" "c-a  Jump to beginning of line"
+echo_color "\033[0;90m" "c-e  Jump to end of line"
+echo_color "\033[0;90m" "c-d  Delete forward"
+echo_color "\033[0;90m" "c-h  Delete backward"
+echo_color "\033[0;90m" "c-k  Delete forward to end of line"
+echo_color "\033[0;90m" "c-u  Delete entire line"
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+function iterm2_print_user_vars() {
+  iterm2_set_user_var elixirVersion $(asdf current elixir)
+  iterm2_set_user_var rubyVersion $(asdf current ruby)
+  iterm2_set_user_var nodeVersion $(asdf current nodejs)
+  iterm2_set_user_var erlangVersion $(asdf current erlang)
+  iterm2_set_user_var pythonVersion $(asdf current python)
+}
